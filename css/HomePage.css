@@ -1,0 +1,298 @@
+html{
+  font-size:14px;
+}
+ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+a{
+  text-decoration: none;
+}
+ .nav-content ul li a{
+   text-decoration: none;
+   color:black;
+} 
+.mailButton:hover{
+  text-decoration:none;
+}
+#h-page{
+ background:#fafafa;
+ margin-top:50px;
+}
+#h-header{
+  width:1085px;
+  min-width:1085px;
+  padding:50px;
+  margin:auto;
+  display:flex;
+}
+#h-header .header-left{
+  width:50%;
+  padding:0px 50px;
+  margin-left:60px;
+}
+#h-header .header-left .user-name{
+  font-weight:800;
+  font-size:24px;
+}
+.glyphicon{
+  color:gray;
+}
+.glyphicon:hover{
+  color:black;
+}
+#h-header .header-left ul{
+  display:flex;
+  font-size:18px;
+}
+#h-header .header-left .fans{
+  color:gray;
+  font-size:14px;
+}
+#h-header .header-left ul li{
+  text-align:center;
+  width:50px;
+}
+#h-header .header-right{
+  width:40%;
+}
+#h-header .header-right .r-pic{
+  width:100px;
+  height:100px;
+  margin:auto;
+}
+#h-header .header-right .r-pic img{
+  border-radius:100px;
+  width:100%;
+}
+#production{
+  margin:50px 0px;
+  min-width:1085px;
+  height:600px;
+}
+#production .p-list{
+  display:flex;
+  width:20%;
+  margin:auto;
+}
+#production .p-list li{
+ width:50px;
+ text-align:center;
+ margin:0px 11px;
+ color:#202020;
+ font-weight:600;
+}
+#production .p-list .p-one{
+ border-bottom:1px solid black;
+}
+#production .p-list .p-one a{
+  text-decoration:none;
+  color:black;
+}
+#production .p-cons{
+  margin-top: -1px;
+  border-top:1px solid #eee;
+}
+/*样式一*/
+.p-cons .cons1{
+  width:1085px;
+  margin:auto;
+  opacity:1;
+}
+.p-cons .cons1 .cons1-title{
+  width:200px;
+  margin:auto;
+}
+.p-cons .cons1 .cons1-title ul{
+ display:flex;
+ margin:10px;
+ width:122px;
+ border:1px solid #eee;
+ border-radius:3px;
+}
+.p-cons .cons1 .cons1-title ul li{
+  padding:10px 8px;
+}
+.p-cons .cons1 .cons1-title ul .t-one{
+ background: #eee;
+}
+.p-cons .cons1 .cons1-title ul .draft{
+ border:1px solid transparent;
+ padding-right:10px;
+}
+.p-cons .cons1 .cons1-con{
+  width:1085px;
+  margin-top:20px;
+}
+.p-cons .cons1 .cons1-con .con-box{
+  width:248px;
+  height:191px;
+  color: #94969a;
+  background:#edeeee;
+  opacity:1;
+}
+.p-cons .cons1 .cons1-con .con-box:hover{
+  opacity:0.6;
+}
+.p-cons .cons1 .cons1-con .con-box a{
+ display:block;
+ font-weight:bold;
+ font-size:80px;
+ padding:10px;
+ text-align:center;
+ color: #94969a;
+ text-decoration:none;
+}
+
+.p-cons .cons1 .cons1-con .con-box p{
+ color:#94969a;
+ font-size:16px;
+ margin-top:-30px;
+ text-align:center;
+}
+/*样式二*/
+.p-cons .cons2{
+  width:1085px;
+  margin:auto;
+  opacity:0;
+  display:none;
+}
+.p-cons .cons2 .hub{
+  padding:10px;
+  font-size:1.75rem;
+  font-weight: 500;
+}
+.p-cons .cons2 .hub .word{
+  display:inline-block;
+  width:850px;
+  margin-left:30px;
+}
+.p-cons .cons2 .cons2-con{
+  width:1085px;
+  height:230px;
+  display:flex;
+  margin-top:20px;
+}
+.p-cons .cons2 .cons2-con .con-box{
+  width:155px;
+  height:213px;
+  color: #94969a;
+  background:#edeeee;
+}
+.p-cons .cons2 .cons2-con .con-box a{
+ display:block;
+ font-weight:bold;
+ font-size:50px;
+ color: #94969a;
+ padding:40px 20px;
+ text-align:center;
+}
+.p-cons .cons2 .cons2-con .con-box p{
+ color:#94969a;
+ font-size:16px;
+ margin-top:-50px;
+ text-align:center;
+}
+.p-cons .cons2 .cons2-con .con-box2{
+ margin-left:40px;
+}
+.p-cons .cons2 .cons2-con .con-box2 .like{
+  width:155px;
+  height:155px;
+  background-image:url(../images/favdefault.png);
+  background-size:155px 155px;
+}
+.p-cons .cons2 .cons2-con .con-box2 .like .like-bg{
+  width:155px;
+  height:155px;
+  background:white;
+  opacity:0.5;
+  display:none;
+}
+.p-cons .cons2 .cons2-con .con-box2 .like:hover .like-bg{
+ display:inline-block;
+}
+.p-cons .cons2 .cons2-con .con-box2 p{
+  color:#202020;
+  font-weight:500;
+}
+/*样式三*/
+.p-cons .cons3{
+  width:1085px;
+  margin:auto;
+  padding:80px;
+  display:none;
+  opacity:0;
+}
+.p-cons .cons3 .three-bg{
+ width:53px;
+ margin:auto;
+}
+.p-cons .cons3 .three-bg img{
+  width:100%;
+}
+.p-cons .cons3 p{
+ text-align:center;
+ font-size:20px;
+}
+/*样式四*/
+.p-cons .cons4{
+  width:1085px;
+  margin:auto;
+  opacity:0;
+  display:none;
+}
+.p-cons .cons4 .four-title{
+  display:flex;
+  margin-top:10px;
+}
+.p-cons .cons4 .four-title .four-left{
+  width:45%;
+  text-align:center;
+}
+.p-cons .cons4 .four-title .four-right{
+  width:50%;
+  text-align:right;
+}
+.p-cons .cons4 .four-con{
+  margin-top:20px;
+  height:500px;
+}
+.p-cons .cons4 .four-con ul li{
+ width:100px;
+ padding:3px;
+ margin:5px;
+}
+.p-cons .cons4 .four-con ul li:hover{
+  cursor:pointer;
+}
+.p-cons .cons4 .four-con ul .system{
+  border-left:2px solid black;
+}
+
+.p-cons .cons4 .four-con ul .chat{
+ color:#757779;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

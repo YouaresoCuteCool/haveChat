@@ -1,0 +1,243 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-weight:lighter;
+	font-family:'微软雅黑';
+}
+li{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+.container{
+	width:100%;
+	position:relative;
+	top:100px;
+}
+.container .header-image{
+	width:100%;
+	min-width:1200px;
+	height:350px;
+	color:white;
+	background:url("http://pic.topys.cn/uploads/20180511/862246691.jpg?x-oss-process=image/format,webp") no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.container .header-image .title-first{
+ text-align:center;
+ margin-top:0px;
+ margin-bottom:20px;
+}
+.container .header-image a{
+	display:block;
+	border:1px solid white;
+	width:120px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	border-radius:40px;
+	margin:auto;
+	background-color:rgba(255,255,255,.3);
+	cursor:pointer;
+}
+.container .header-image a:hover{
+	background-color:white;
+	color:black;   
+}
+.title-third{
+   font-size:30px;
+   font-weight:bold;
+   margin-bottom:50px;
+}
+.container .header-image p{
+	text-align:center;
+}
+.container .body-box{
+	width:1180px;
+	padding:20px;
+	margin:30px auto;
+}
+.body-box .search{
+	width:100%;
+	height:50px;
+	margin:auto;
+	position:relative;	
+}
+.body-box .search :first-child{
+	border:1px solid gray;
+	width:96.5%;
+	height:48px;
+	background:url('../images/search.png') no-repeat;
+    background-size:25px;
+    background-position:left 10px center;
+    padding-left:40px;
+    font-size:18px;
+}
+
+.body-box .search :last-child{
+	display:inline-block;
+	width:100px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	background:black;
+	color:white;
+	font-size:20px;
+	position:absolute;
+	top:0;
+	right:-1px;
+}
+.body-content{
+	width:100%;
+	margin-top:30px;
+	overflow:hidden;
+}
+.body-content>div{
+	width:248px;
+	height:248px;
+	background-size:cover;
+	position:relative;
+	margin:20px 20px;
+	float:left;
+}
+.body-content .items{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.3);
+}
+.body-content .items>a{
+	display:inline-block;
+	width:150px;
+	font-size:22px;
+	color:white;
+	margin-top:10px;
+	margin-left:10px;
+
+}
+.body-content .items div{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	margin-top:35px;
+}
+.body-content .items div span{
+	display:inline-block;
+	height:40px;
+	vertical-align:middle; 
+	font-size:35px;
+	color:white;
+	background:url("http://pic.topys.cn/topys_web/home/img/icon/ic-topic-us.png") no-repeat;
+    background-size:30px;
+    background-position:left bottom;
+    padding-left:30px;
+
+}
+.body-content .items div a{
+	display:inline-block;
+	height:35px;
+	font-size:13px;
+	vertical-align:bottom;
+	color:white;
+}
+.more{
+	width:100%;
+	height:250px;
+}
+.more .read{
+	display:block;
+	width:100px;
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	border-radius:50px;
+	margin:auto;
+	color:gray;
+	margin-top:60px;
+	border:1px solid gray;
+	cursor:pointer;
+}
+.more .read:hover{
+	color:black;
+	border:1px solid black;
+}
+.item1{
+  background:url("http://pic.topys.cn/uploads/20171120/1390026924.png?x-oss-process=style/topic-pic-webp-2x") no-repeat;
+}
+.item2{
+ background:url("http://pic.topys.cn/uploads/20180319/1511798602.png?x-oss-process=style/topic-pic-webp-2x") no-repeat;
+}
+.item3{
+ background:url("http://pic.topys.cn/uploads/20180205/34570083.jpg?x-oss-process=style/topic-pic-webp-2x") no-repeat;
+  
+}
+.item4{
+ background:url("http://pic.topys.cn/uploads/20171204/1908372565.gif?x-oss-process=style/topic-pic-webp-2x") no-repeat;
+  
+}
+.item5{
+ background:url("http://pic.topys.cn/uploads/20171211/1170726950.jpeg?x-oss-process=style/topic-pic-webp-2x") no-repeat;
+  
+}
+.item6{
+ background:url("http://pic.topys.cn/uploads/20171113/846344012.png?x-oss-process=style/topic-pic-webp-2x") no-repeat;
+  
+}
+.item7{
+ background:url("http://pic.topys.cn/uploads/20180402/2057881154.jpg?x-oss-process=style/topic-pic-webp-2x") no-repeat;
+  
+}
+.item8{
+ background:url("http://pic.topys.cn/uploads/20171225/2072056458.jpeg?x-oss-process=style/topic-pic-webp-2x") no-repeat;
+  
+}
+.anim{
+	display:none;
+	width:100px;
+	height:100px;
+	margin:auto;
+	margin-top:60px;
+	background:url("http://pic.topys.cn/topys_web/home/svg/Rolling.svg") no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,507 @@
+*{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+}
+.container{
+  width:800px;
+  max-width:800px;
+  margin:auto;
+  position:relative;
+  top:100px;
+}
+.big-pic{
+  width:100%;
+}
+.big-pic img{
+  width:100%;
+}
+.container .title{
+  width:80px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+  margin:auto;
+  font-size:10px;
+  color:gray;
+  border-bottom:1px solid gray;
+  margin-bottom:30px;
+}
+.container .title a{
+  color:gray;
+}
+.container .title a:hover{
+  color:black;
+}
+.container .t2{
+  text-align:center;
+  margin-bottom:20px;
+}
+.container .ta{
+  height:50px;
+  line-height:50px;
+  text-align:center;
+}
+.container .ta a{
+  font-size:14px;
+  color:gray;
+}
+.article p{
+  color:gray;
+  font-size:15px;
+}
+.share a{
+  text-decoration:none;
+  color:black;
+}
+.share{
+  width:100%;
+  height:60px;
+  margin:80px 0px;
+}
+.share div{
+  width:300px;
+  height:60px;
+  line-height:60px;
+  float:right;
+}
+.share div a{
+  display:inline-block;
+  width:50px;
+  height:50px;
+  border-radius:50px;
+  line-height:50px;
+  text-align:center;
+  background-color:#fafafa;
+}
+.share div a:hover{
+  background-color:#fafafa;
+  filter:invert(100%);
+}
+.share div a i{
+  font-size:25px;
+  background-color:white;
+}
+.author{
+  width:100%;
+  height:100px;
+  line-height:100px;
+  border-top:1px solid #edeeee;
+  border-bottom:1px solid #edeeee;
+}
+.author div{
+  height:40px;
+  margin-top:30px;
+}
+.author .flL{
+  float:left;
+  margin-right:10px;
+}
+.author .flL img{
+  width:40px;
+  height:40px;
+}
+.author .flL a{
+  width:100%;
+  height:20px;
+  line-height:20px;
+  font-size:13px;
+  color:gray;
+  float:left;
+}
+.flR{
+  width:40px;
+  height:40px;
+  float:right;
+  margin-left:15px;
+  cursor:pointer;
+}
+.guanzhu{
+  background:url("../images/guanzhu1.png") no-repeat;
+  background-size:40px;
+  background-position:left center;
+}
+.guanzhu:hover{
+  background:url("../images/guanzhu2.png") no-repeat;
+  background-size:40px;
+  background-position:left center;
+}
+.liaotian{
+  background:url("../images/liaotian1.png") no-repeat;
+  background-size:40px;
+  background-position:left center;
+}
+.liaotian:hover{
+  background:url("../images/liaotian2.png") no-repeat;
+  background-size:40px;
+  background-position:left center;
+}
+.author a:hover{
+  color:black;
+}
+.tool{
+  width:200px;
+  height:50px;
+  border-radius:5px;
+  line-height:50px;
+  text-align:center;
+  color:white;
+  position:fixed;
+  left:45%;
+  top:45%;
+  background:rgba(0,0,0,.5);
+  display:none;
+}
+.ltool{
+  width:360px;
+  height:500px;
+  position:fixed;
+  right:0;
+  bottom:-500px;
+  background:white;
+  box-shadow:0px 0px 5px 5px #edeeee;
+}
+.ltool-sec{
+  position:fixed;
+  right:0;
+  bottom:0px;
+  animation:trans 1s;
+  animation-fill-mode:backwards;
+}
+@keyframes trans{
+  from{
+    bottom:-500px;
+  }
+  to{
+    bottom:0;
+  }
+}
+.ltool header{
+  width:100%;
+  height:40px;
+  line-height:40px;
+  background:#fafafa;
+  border:1px solid #edeeee;
+  color:black;
+  font-size:20px;
+}
+.ltool header span{
+  padding:5px;
+}
+.ltool header div{
+  float:right;
+  width:40px;
+  height:40px;
+  cursor:pointer;
+}
+.ltool footer{
+  width:100%;
+  height:50px;
+  line-height:50px;
+  background:#fafafa;
+  border:1px solid #edeeee;
+  position:absolute;
+  left:0;
+  bottom:0;
+}
+.ltool footer :first-child{
+  border:1px solid gray;
+  width:75%;
+  height:40px;
+  vertical-align:middle;
+  outline:none;
+}
+.ltool footer :last-child{
+  border:1px solid #edeeee;
+  width:19%;
+  height:43px;
+  background:black;
+  color:white;
+}
+.ltool footer input[placeholder]{
+  font-size:15px;
+  padding-left:5px;
+}
+.ltool footer :last-child:hover{
+  opacity:.8;
+}
+.dianzan{
+  width:800px;
+  height:200px;
+  margin:auto;
+  margin-top:150px;
+}
+.dianzan .hand{
+  height:80px; 
+  width:80px;
+  line-height:80px;
+  text-align:center;
+  border-radius:80px;
+  border:1px solid #9b9b9b;
+  margin-top:40px;
+  margin:auto;
+  cursor:pointer;
+  background:url("https://www.topys.cn/Public/home/img/icon/ic-praise-active.png") no-repeat;
+  background-size:30px;
+  background-position:center;
+}
+.dianzan .hand img{
+  width:30px;
+  height:30px;
+  margin-top:10px;
+}
+.dianzan p{
+  text-align:center;
+  margin-top:10px;
+  font-size:15px;
+  color:gray;
+}
+.comment{
+  width:800px;
+  margin:auto;
+}
+.comment .send img{
+  width:40px;
+  height:40px;
+  border-radius:40px;
+  vertical-align:top;
+}
+textarea{
+  width:92%;
+  height:100px;
+  resize:none;
+  border:1px solid #9b9b9b;
+  outline:none;
+  padding:5px;
+}
+textarea[placeholder]{
+  font-size:15px;
+  color:gray;
+}
+.btn{
+  width:100%;
+  height:40px;
+}
+.btn input{
+  float:right;
+  border:1px solid black;
+  outline:none;
+  width:100px;
+  height:40px;
+  font-size:15px;
+}
+.btn input:hover{
+  color:white;
+  background:black;
+}
+.commentT{
+  width:100%;
+  height:50px;
+  line-height:50px;
+  margin-top:30px;
+}
+.commentT div{
+  float:left;
+}
+.commentT .text{
+  width:100px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+  font-size:25px;
+}
+.commentT .duoyu{
+  height:5px;
+  width:650px;
+  margin-left:30px;
+  margin-top:20px;
+  border-top:1px dotted #9d9d9d;
+  border-bottom:1px dotted #9d9d9d;
+}
+.newComment{
+  width:99%;
+  height:500px;
+  margin:auto;
+  overflow:auto;
+}
+.newComment .item{
+  width:100%;
+  border-top:1px solid #9d9d9d;
+  border-bottom:1px solid #9d9d9d;
+  overflow:hidden;
+  margin-bottom:10px;
+}
+.item div{
+  float:left;
+}
+.item .sculpture{
+  width:50px;
+  height:100%;
+  margin-left:5px;
+}
+.item .sculpture img{
+  display:block;
+  margin:auto;
+  width:45px;
+  height:45px;
+  border-radius:25px;
+}
+.item .more{
+  width:700px;
+  height:100%;
+  margin-left:20px;
+}
+.baseLine{
+  width:100%;
+  height:40px;
+  font-size:15px;
+  color:gray;
+}
+.baseLine a{
+  height:40px;
+  line-height:40px;
+  color:gray;
+  display:inline-block;
+  margin-right:10px;
+}
+.baseLine a:hover{
+  color:black;
+}
+.fun{
+  height:40px;
+  margin-top:15px;
+}
+.fun span{
+  display:inline-block;
+  width:40px;
+  height:40px;
+}
+.fun .huifu1{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-position:-85px -60px;
+  background-size:170px;
+}
+.fun .huifu1:hover{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-position:-43px -60px;
+  background-size:170px;
+}
+.fun .dianzan2{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-position:-125px -100px;
+  background-size:170px;
+}
+.fun .dianzan2:hover{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-position:-84px -100px;
+  background-size:170px;
+}
+.huifu{
+  width:100%;
+  padding:10px;
+  border:1px solid #9d9d9d;
+  margin-bottom:20px;
+}
+.hf{
+  height:20px;
+  color:gray;
+  font-weight:lighter;
+}
+.hf a{
+  color:gray;
+  font-weight:bold;
+}
+.modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:none;
+}
+.modal .bg{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background:rgba(0,0,0,.3);
+}
+.modal .com{
+  position:absolute;
+  top:200px;
+  left:400px;
+  width:600px;
+  height:220px;
+  background:white;
+}
+.modal .com img{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border-radius:20px;
+  margin-top:30px;
+  margin-left:30px;
+}
+.modal .com textarea{
+  width:500px;
+  height:100px;
+  vertical-align:middle;
+  margin-top:30px;
+}
+.modal .btn{
+  width:98%;
+  margin-top:10px;
+}
+.cebian{
+  width:50px;
+  height:200px;
+  position:fixed;
+  right:0;
+  top:50%;
+}
+.cebian a{
+  display:inline-block;
+  width:40px;
+  height:40px;
+}
+.cebian .fx{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-size:160px;
+  background-position:-80px -54px;
+}
+.cebian .fx:hover{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-size:160px;
+  background-position:-40px -54px;
+}
+.cebian .pl{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-size:160px;
+  background-position:-44px -95px;
+}
+.cebian .pl:hover{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-size:160px;
+  background-position:-5px -95px;
+}
+.cebian .dz{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-size:160px;
+  background-position:-120px -95px;
+}
+.cebian .dz:hover{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-size:160px;
+  background-position:-80px -95px;
+}
+.cebian .ax{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-size:160px;
+  background-position:-2px -55px;
+}
+.cebian .ax:hover{
+  background:url("http://pic.topys.cn/topys_web/images/home/general/icon_sprite.png") no-repeat;
+  background-size:160px;
+  background-position:-120px -55px;
+}

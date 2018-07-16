@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TOPYS | 全球顶尖创意分享平台 OPEN YOUR MIND</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="../js/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/lb.css">
+  <link rel="stylesheet" href="../css/aboutus.css">
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+  <div class="nav-header">
+    <div class="nav-container">
+      <div class="nav-content">
+      <ul>
+        <li>
+          <a class="find">发现</a>
+          <div class="find-content">
+          <ul>
+            <li class="Econ">
+            <div>独家内容</div>
+            <div><a href="mingrenfangtan.html">名人访谈</a></div>
+            <div><a href="mingrenfangtan.html">独家合辑</a></div>
+            <div><a href="mingrenfangtan.html">专栏</a></div>
+            <div><a href="mingrenfangtan.html">百赞必看</a></div>
+            </li>
+            <li class="theme">
+              <div>主题站</div>
+              <div><a href="mingrenfangtan.html">创意越过界</a></div>
+              <div><a href="mingrenfangtan.html">好广告</a></div>
+              <div><a href="mingrenfangtan.html">大设计</a></div>
+              <div><a href="mingrenfangtan.html">轻艺术</a></div>
+              <div><a href="mingrenfangtan.html">方法论</a></div>
+              <div><a href="mingrenfangtan.html">泛阅读</a></div>
+              <div><a href="mingrenfangtan.html">建筑派</a></div>
+              <div><a href="mingrenfangtan.html">品牌声浪</a></div>
+            </li>
+          </ul>
+          </div>
+        </li>
+        <li><a href="youliao.html">有聊</a></li>
+        <li><a href="mindsCollege.html">MINDS学院</a></li>
+        <li><a href="event.html">活动</a></li>
+        <li><a href="store.html">未知商店</a></li>
+      </ul>
+      </div>
+      <div class="nav-logo"><img src="../images/topys-logo.png" alt=""></div>
+      <div class="nav-collapse" style="text-align: right;">
+        <ul>
+          <li>
+            <div style="padding: 20px 0"><a class="search"></a></div>
+            <div class="search-content">
+              <div class="search-border">
+              <input type="text" placeholder="热门搜索：创意"><a href="">搜索</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div style="padding: 20px 0"><a class="bell"></a></div>
+            <div class="bell-content">
+          <ul>
+            <li class="infor">
+            <div>通知</div>
+          </li>
+
+            <li class="chat dactive">
+              <div>聊天</div>
+            </li>
+          </ul>
+          <div class="nav-more">
+            <input type="button" value="查看更多">
+          </div>
+          </div>
+          </li>
+          <li>
+            <div style="padding: 20px 0"><a class="user"></a></div>
+            <div class="user-content">
+              <div class="user-container">
+              <div><a href="HomePage.html">灵感库</a></div>
+              <div><a href="HomePage.html">我的主页</a><a href="">设置</a></div>
+              <div><a href="company.html">申请企业账号</a></div>
+              <div><a href="">退出</a></div>
+              </div>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+   <!-- 头文件结束 -->
+<div class="carousel" @mouseenter="enter" @mouseleave="leave">
+    <transition-group
+            tag="ul"
+            name="image"
+    >
+        <li v-for='(image,index) in img' :key='index' v-show="index === mark">
+            <a href="javascript:;">
+                <img :src="image">
+            </a>
+        </li>
+    </transition-group>
+    <div class="bullet">
+        <span v-for="(item,index) in img.length" :class="{'active':index === mark}"
+         @click="change(index)" :key="index"></span>
+    </div>
+    <div class="switch">
+        <span class="prev" @click="prev">&lt;</span>
+        <span class="next" @click="next">&gt;</span>
+    </div>
+</div>
+<!-- 轮播文件结束 -->
+
+<div class="text-container"> <h1>About Us</h1>
+  <div class="text-border">
+   
+    <div class="textpart textpart1">
+      <p>作为中国成立最早、最受欢迎的创意垂直网站，TOPYS立志打造一个多元、完备的泛创意知识产品系统和学习平台，试图成为“A Creative Institution”，希望借由创意的学习与激发，赋予人以最大价值及最高境界的成长</p>
+      <p>我们以“Open Your Mind”为宗旨，自2003年成立以来，始终专注在全球创意、艺术、人文领域寻找最有质感的声音，将发掘和组织当代创意文化中最好的部分为己任，鼓励分享观念、想法、体验，以及对未知的想像，即为创意人提供一个学习交流、自由创造的平台，一个激发新观念的孵化器，一个以创意改变世界的桥梁。</p>
+      <p v-show="show">我们标榜的创意，不是一件商品，也不是一个产业，而是作用于所有产业，作用于人类感知世界，并以此探索未来的创新思维系统，是人类面向未来、延续发展的动力所在。中国正在改变，不只是产业转型，还开始探索产生“价值”的崭新方式，价值该如何创造和培养？ 1+1如何大于2？崭新的城市架构和全球网络意味着什么？观念变革的力量和思维方式的根本改变催生着一个全新的经济型态正在形成：以创意经济、美学经济、教育体验经济、博物馆经济为核心内容，以激发创造力为目标，尊重人、发展人、成就人的全新经济型态，一个创意的中国（from Made in China to Create in China），正在到来的路上。我们的目标正是借助全球性的创意思维资源，为“创意中国”提供知识储备与思想高地，为创意价值的被认可和提升贡献力量，为创意中国的起飞提供跑道。</p>
+    </div>
+    <div class="textpart textpart2">
+      <p>As one of the earliest and most popular creative vertical website in China, TOPYS is trying to become “A Creative Institution” which aspired to build a variety, completely creative knowledge system and learning platform. We hope creator could achieve maximum value through creative emulation and inspiration.</p>
+      <p>We take “Open Your Mind” as a purpose and focus on searching the most extraordinary work in Creative, Art and Humanities since 2003. Our mission is to dig deep inside the creative culture to show the best part for creator and encouraging them to share ideas, thoughts, experiences and imagination of unknown. We are a platform, an incubator, a bridge for creator to change the world!</p>
+      <p v-show="show">The meaning of “Creative” in TOPYS is never a merchandise nor an industry. Rather, it is an innovative thinking system for human to apperceive the world and explore the future and it is also a power for human to face the future and continue development. China is now changing, “How to create value? How to make 1+1>2? What does the new urban structure and global network mean to China?” are the hottest topics. A new economic formation is forming by the change of wisdom and thought: Taking the Creative economy, Aesthetic economy, Educational experience economy and Museum economy as the core and aiming to stimulate creativity. It is time to go from “Made in China” to “Create in China”.Our objective is to provide knowledge reserve for “Creative China” and to make contribution to the recognition and improvement of “Creative Value” with the help of global creative thinking resources.</p>
+    </div>
+  </div>
+  <input type="button" value="查看更多" class="watchmore" @click="showIt">
+</div>
+<br>
+<br>
+<div class="propartcontainer">
+  <h1>Our Products</h1>
+  <div class="propartborder">    
+    <div class="propart propart1">
+      <a href="mindsCollege.html"><img src="../images/pro1.webp" alt=""></a>
+      <a>
+        <h4>TOPYS</h4>
+        <span>全球顶尖创意分享平台</span>
+      </a>
+    </div>
+    <div class="propart propart2">
+      <a href="mindsCollege.html"><img src="../images/pro2.webp" alt=""></a>
+       <a>
+        <h4>Minds创意学院</h4>
+        <span>这是一个最好的时代，去学习</span>
+       </a>
+    </div>
+    <div class="propart propart3">
+      <a href="mindsCollege.html"><img src="../images/pro3.webp" alt=""></a>
+      <a>
+        <h4>TOP.CC创意连接</h4>
+        <span>连接全球万千创造者</span>
+      </a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="teamcontainer">
+  <h1>Our Team</h1>
+  <div class="teampartborder">    
+   <div class="personintro">
+     <div class="personimg">
+      <div class="introduce">老龄化80后，10年前孵了个网站叫TOPYS，一路从搬运工到搭台工。八卦绝缘体 ，热衷學習和研究新事物，是只小龍女的爹</div></div>
+     <h5>老黄</h5>
+     <p>创始人</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg">
+      <div class="introduce">万能打杂，暴躁客服，校对女王，重度话痨，工资条上显示职位为主编。不小心混进文艺青年里的文学青年，各类手帕、本子、语言爱好者。</div></div>
+     <h5>vivi</h5>
+     <p>主编</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg">
+      <div class="introduce">醉心于收集各种生活杂货retro小物，小店爱好者，以及警长最重要的铲屎官。
+      </div></div>
+     <h5>moffy</h5>
+     <p>项目总监／副主编</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">字体控、杂志控、湘菜控的湖南人</div></div>
+     <h5>海山</h5>
+     <p>艺术总监</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">作死从垄断国企跳出来的不良少年</div></div>
+     <h5>周小涛</h5>
+     <p>运营总监</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">不是我选择了黑社会，是黑社会选择了我</div></div>
+     <h5>Asakur浅仓</h5>
+     <p>副主编</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">喜欢画画但画的不太好 不喜欢被叫姐却被90后同事每天叫800遍Lu姐的白羊座顶呱呱妈咪</div></div>
+     <h5>卢杰</h5>
+     <p>行政／商务助理</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">职场新人，不可爱也不迷人的反派角色。一点点少女。</div></div>
+     <h5>摇摇洞</h5>
+     <p>编辑</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">Arty的脸是用圆规画出来的</div></div>
+     <h5>arty</h5>
+     <p>商务助理／活动执行</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">神游状态童颜少女U</div></div>
+     <h5>ayuu</h5>
+     <p>美术指导</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">无差评的水瓶座，喜欢撸铁、深蹲思考本美少妇的人生</div></div>
+     <h5>Shannon</h5>
+     <p>市场总监</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">一个被毒舌标签耽误的无辜天蝎</div></div>
+     <h5>Funfun</h5>
+     <p>运营策划</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">这么好奇我的自我介绍干嘛。</div></div>
+     <h5>丁涓涓</h5>
+     <p>客户经理</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">负责对外联络、翻译、产品策划、文案的多功能体</div></div>
+     <h5>wongxiufa</h5>
+     <p>国际创意管理</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">爱吃糖爱喝啤酒的少年，长大后想成为一个艺术家</div></div>
+     <h5>梁卓思</h5>
+     <p>美术指导</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">每天说话限额5句的慢热少女</div></div>
+     <h5>思元</h5>
+     <p>策划</p>
+   </div>
+   <div class="personintro">
+     <div class="personimg"><div class="introduce">一个从长相看不出来是做什么职业的女人</div></div>
+     <h5>vera</h5>
+     <p>财务</p>
+   </div>
+   <div class="personintro"></div>
+   <div class="personintro"></div>
+   <div class="personintro"></div>
+  </div>
+</div>
+<div class="propartcontainer">
+  <h1>Contact Us</h1>
+  <div class="propartborder">    
+    <div class="contactpart contactpart1">
+    <div>
+      <p class="contactimg"><img src="../images/ic-c01.png" alt=""></p>
+      <p>打个招呼</p>
+      <div>联络、意见或建议</div>
+      <div class="contactway">mail: contact@topys.cn</div>
+    </div>
+    </div>
+    <div class="contactpart contactpart2">
+      <div>
+      <p class="contactimg"><img src="../images/ic-c02.png" alt=""> </p>
+      <p>商务合作</p>
+      <div>广告投放、付费招聘、企业服务定制</div>
+      <div class="contactway">QQ：3403339776 <br>
+            tel：0755-22664301 <br>
+            mail：marketing@topys.cn<br>
+      </div>
+    </div>
+    </div>
+    <div class="contactpart contactpart3">
+      <div>
+      <p class="contactimg"><img src="../images/ic-c03.png" alt=""> </p>
+      <p>内容合作</p>
+      <div>媒体合作、资源交换、企业及个人投稿</div>
+      <div class="contactway">QQ：3091148530 <br>
+           tel：0755-22664301<br>
+           mail：media@topys.cn<br>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+  <!-- 页面尾部 -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-part1">
+          <input type="text" placeholder="输入邮箱订阅Newsltter"><a class="mailButton">→</a>
+        </div>
+        <div class="footer-part2">
+          <span>关注我们</span>
+          <a class="youku"></a>
+          <a class="fb"></a>
+          <a class="weixin"></a>
+          <a class="weibo"></a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="footer-next">
+        <a href="aboutus.html">关于我们</a>
+        <a href="recruit.html">招聘及广告服务</a>
+        <a href="mz.html">免责</a> 
+        <div>TOPYS.CN 深圳市看见文化传播有限公司 2003-2018 ALL RIGHTS RESERVED. 粤ICP备06047857号</div>
+      </div>
+      </div>
+  </footer>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script src="../js/index.js"></script>
+  <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/about.js"></script>
+</body>
+</html>

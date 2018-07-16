@@ -1,0 +1,74 @@
+.list-container{
+  width:1085px;
+  margin:auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding-top: 80px;
+}
+.list{
+  width:310px;
+  background-color: white;
+  padding: 30px 15px 0px 15px;
+  border:1px solid rgba(105,105,105,0.2);
+}
+.list1{
+  height:517px !important;
+  margin-top: 32px;
+}
+.list2{
+  height:606px !important;
+}
+.list3{
+  height:574px !important;
+  margin-top: 32px;
+}
+.list p{
+  text-align: center;
+  padding-top: 20px;
+  width:55px !important;
+  font-size: 0.8rem;
+  color:rgba(105,105,105,0.4);
+}
+.list div{
+  text-align: center;
+  padding: 60px 0;
+  font-size: 3rem;
+}
+.listblue{
+  color:blue;
+}
+.list li{
+  padding:12px 0;
+  font-size: 0.9rem;
+  color:rgba(105,105,105,0.9);
+  border-top:1px solid rgba(105,105,105,0.2);;
+}
+.list li span{
+  float: right;
+  color:rgba(105,105,105,0.6);
+}
+.list .money{
+  font-size:0.8rem;
+  color:rgba(105,105,105,0.6);
+  width:120px;
+  height: 23px;
+  line-height: 45px;
+}
+.list  b{
+  font-size: 2rem;
+  color: #333;
+  clear:both;
+  font-weight: 300 !important;
+}
+.money{
+  float: right;
+}
+.table-bgc p{
+  margin:auto;
+  width:1085px;
+  text-align: right;
+  font-size: 0.8rem;
+  color:rgba(105,105,105,0.9);
+}

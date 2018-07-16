@@ -1,0 +1,194 @@
+
+html{
+  font-size:14px;
+}
+ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+a{
+  text-decoration:none;
+}
+*{
+  outline:none;
+}
+.e-header{
+  min-width:1268px;
+  height:400px;
+  padding-top:42px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*第二部分 */
+.e-section{
+  margin-top:50px;
+}
+.e-section ul{
+  display:flex;
+  width:1000px;
+  margin:auto;
+}
+.e-section ul li{
+  border:1px solid silver;
+  width:300px;
+}
+.e-section .activity,.nation,.alldate{
+  display:inline-block;
+  width:280px;
+  height:40px;
+  font-size:15px;
+  color:#495057;
+  border:#ced4da;
+  padding:375rem 1.75rem .375rem .75rem;
+  background:#fff;
+}
+.e-section ul .last{
+  border:none;
+}
+.e-section ul .last a{
+  text-decoration: none;
+  text-align: center;
+  display:inline-block;
+  width: 135px;
+  height: 40px;
+  line-height:40px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 0;
+}
+
+/*第三部分*/
+.section-box{
+  display:flex;
+  flex-wrap:wrap;
+  width:1115px;
+  margin:50px auto;
+  align-content: center;
+}
+.section-box .box-border{
+  width:23%;
+  margin:10px auto;
+}
+.section-box .box-border .pic{
+  width:100%;
+}
+.section-box .box-border .pic img{
+  width:100%;
+  height:auto;
+}
+.section-box .box-border .lecture{
+  position:relative;
+  top:-20px;
+}
+.section-box .box-border .lecture .word{
+  display: block;
+  width:58px;
+  height:32px;
+  margin:auto;
+  border: 1px solid #202020;
+  background-color: #fff;
+  text-align:center;
+  line-height:32px;
+}
+.section-box .box-border:hover .word{
+  color:white;
+  background:black;
+}
+.section-box .box-border .design{
+ margin-top:-10px;
+}
+.section-box .box-border .design .des-title{
+  margin:3px 0px;
+}
+.section-box .box-border .design .des-title a{
+  display:inline-block;
+  font-size:16px;
+  width:100%;
+  color: #000;
+  overflow: hidden;
+  text-align: center;
+}
+.section-box .box-border .design .dec-add{
+  padding:20px 0px;
+}
+.section-box .box-border .design .dec-add a{
+  display:block;
+  text-align:center;
+  font-size: 13px;
+  color: #9b9b9b;
+}
+.section-box .box-border .design .dec-add a:hover{
+  color:black;
+}
+.section-box .box-border .author{
+  border-top:1px solid #9b9b9b;
+  text-align:center;
+  padding-top:10px;
+  font-size:12px;
+  color:#9b9b9b;
+}
+.load .more{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #a5a7aa;
+  color: #a5a7aa;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.load .more:hover{
+  color:black;
+  border:1px solid black;
+}
+.roate{
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.hidden-box{
+  margin-top:-20px;
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+#header{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 10;
+}
+#header .lf{
+  width: 1080px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+}
+#header .lf img{
+  width: 18px;
+}
+#header .lf>div{
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 45px;
+  left: -40px;
+  display: none;
+  z-index: 10;
+}
+#header .lf>div img{
+  width: 100px;
+}
+#header .lr{
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#header .lr img{
+  width: 150px;
+  display: block;
+  margin: 12.5px auto;
+}
+#box{
+  min-width: 1200px;
+}
+#box .logos{
+  width: 1080px;
+  margin: 100px auto;
+}
+#box .logos .logoItem{
+  color: #202020;
+  font-size: 16px;
+  float: left;
+  width: 360px;
+  text-align: center;
+}
+#box .logos .logoItem img{
+  width: 140px;
+  height: 140px;
+}
+#box .footer{
+  clear: both;
+  padding-top: 100px;
+  text-align: center;
+}
+#bg{
+  width: 100%;
+  min-width: 1200px;
+}
+#bg img{
+  width: 100%;
+}
+#mainBox{
+  width: 100%;
+  min-width: 1200px;
+}
+#mainBox .describe{
+  width: 1080px;
+  margin: 10px auto
+}
+#mainBox .describe .desName{
+  float: left;
+  width: 270px;
+  font-weight: 500;
+  font-size: 20px;
+}
+#mainBox .describe .desDes{
+  float: left;
+  width: 800px;
+  font-size: 16px;
+}
+#mainBox .arts{
+  width: 1080px;
+  clear: both;
+  margin:50px auto;
+}
+#mainBox h2{
+  clear: both;
+  text-align: center;
+  padding-top: 50px;
+}
+#mainBox .arts .artPic{
+  width: 1080px;
+  margin-bottom: 20px;
+}
+#mainBox .arts .artPic img{
+  width: 100%;
+}
